@@ -1,5 +1,13 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
 body {
-  background-color: #487BBA;
+  background-image: url("../assets/background.jpg");
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +17,82 @@ body {
 .game-area {
   width: 700px;
   height: 500px;
-  background-color: #000000;
-  border: 2px solid;
+  background-image: radial-gradient(cyan, black);
+  border: 2px solid blue;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.8;
 }
 
+/* Creates sparkling dot animation */
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Creates sparkling dot styles */
+.sparkle-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3FE7EA;
+  animation: sparkle 1.5s infinite;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.numpad div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  border: 2px solid blue;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.numpad .ten {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.numpad div:hover {
+  background-color: blue;
+}
+
+/* Creates display styles */
+.display {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  bottom: 10px;
+  right: 10px;
+  color: blue;
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid cyan;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
