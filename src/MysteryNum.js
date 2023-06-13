@@ -62,16 +62,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function computerTurn(mi, ma, prevPlayerGuess) {
     return new Promise((resolve) => {
-      var computerGuess = 0, exception = 0
+      var computerGuess = 0,
+        exception = 0
 
-      if(ma - mi == 1) {
-        exception++;
-        if(prevPlayerGuess === mi) {
+      if (ma - mi == 1) {
+        exception++
+        if (prevPlayerGuess === mi) {
           computerGuess = ma
-        } else if(prevPlayerGuess === ma) {
+        } else if (prevPlayerGuess === ma) {
           computerGuess = mi
         } else {
-          if(exception & 1) {
+          if (exception & 1) {
             computerGuess = mi
           } else {
             computerGuess = ma
