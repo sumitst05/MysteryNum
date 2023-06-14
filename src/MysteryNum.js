@@ -60,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  var exception = 0
   function computerTurn(mi, ma, prevPlayerGuess) {
     return new Promise((resolve) => {
-      var computerGuess = 0,
-        exception = 0
+      var computerGuess = 0
 
-      if (ma - mi == 1) {
+      if (ma - mi === 1) {
         exception++
         if (prevPlayerGuess === mi) {
           computerGuess = ma
@@ -82,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
         computerGuess = Math.floor((mi + ma) / 2)
       }
 
+      console.log(exception)
+
       var cDisplay = document.querySelector('.computer-display') // Get computer display element
       cDisplay.textContent = computerGuess
       checkGuess(computerGuess, num)
@@ -91,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var mi = 1,
     ma = 10
+
   function adjustRange(guess, num) {
     var guessIsInsideRange = guess > mi && guess < ma
 
@@ -113,10 +116,13 @@ document.addEventListener('DOMContentLoaded', function () {
     while (isGameOver(num, playerGuess, computerGuess) === -1) {
       if (isPlayerTurn) {
         playerGuess = await playerTurn()
+        prevPlayerGuess = playerGuess
         isPlayerTurn = false
       } else {
         var range = adjustRange(playerGuess, num)
         computerGuess = await computerTurn(range[0], range[1], prevPlayerGuess)
+        console.log(range[0], range[1])
+        range = adjustRange(computerGuess, num)
         isPlayerTurn = true
       }
     }
