@@ -31,3 +31,4 @@ Contributions to the MysteryNum game are welcome. If you find any bugs, have sug
 ## License
 
 This project is licensed under the GNU General Public License. See the [LICENSE](LICENSE) file for more details.
+
