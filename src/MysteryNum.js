@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(createSparkle, 200)
 
   let isPlayerTurn = true
+  let isGameEnded = false
 
   function isGameOver(num, playerGuess, computerGuess) {
     if (num === playerGuess) {
@@ -56,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
   async function playerTurn() {
     return new Promise((resolve) => {
       function handleButtonClick() {
+        if (isGameEnded) {
+          return // Exit the function if the game has ended
+        }
         pDisplay.textContent = this.textContent // Update display content with the pressed number
         var playerGuess = parseInt(this.textContent)
         checkGuess(playerGuess, num) // Call checkGuess with the playerGuess value and target number
@@ -127,6 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
         range = adjustRange(computerGuess, num)
         isPlayerTurn = true
       }
+    }
+    if (isGameOver(num, playerGuess, computerGuess) !== -1) {
+      isGameEnded = true
     }
   }
 
