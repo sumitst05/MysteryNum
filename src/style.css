@@ -6,7 +6,7 @@ h1 {
 }
 
 body {
-  background-image: url("../assets/background.jpg");
+  background-image: url('../assets/background.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -47,7 +47,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #3FE7EA;
+  background-color: #3fe7ea;
   animation: sparkle 1.5s infinite;
 }
 
@@ -88,36 +88,36 @@ body {
   height: 200px;
   bottom: 175px;
   left: 75px;
-  background-image: url("../assets/human.png");
+  background-image: url('../assets/human.png');
   background-repeat: no-repeat;
 }
 
 .player-guess {
   position: absolute;
-  width: 200px;
-  height: 25px;
+  width: 218px;
+  height: 48px;
   bottom: 185px;
-  left: 10px;
+  left: 5px;
   color: #eff066;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 24px;
   padding: 10px;
   border: 2px solid #30f2c6;
   background-color: rgba(25, 25, 25, 0.5);
   border-radius: 5px;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .player-display {
   position: absolute;
-  width: 200px;
+  width: 218px;
   height: 75px;
   bottom: 85px;
-  left: 10px;
+  left: 5px;
   color: white;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 48px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -130,20 +130,20 @@ body {
 
 .player-output {
   position: absolute;
-  width: 200px;
+  width: 218px;
   height: 50px;
   bottom: 10px;
-  left: 10px;
+  left: 5px;
   color: #eff066;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 28px;
   padding: 10px;
   border: 2px solid #30f2c6;
   background-color: rgba(25, 25, 25, 0.5);
   border-radius: 5px;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .computer {
@@ -152,36 +152,36 @@ body {
   height: 200px;
   bottom: 175px;
   right: -25px;
-  background-image: url("../assets/computer.png");
+  background-image: url('../assets/computer.png');
   background-repeat: no-repeat;
 }
 
 .computer-guess {
   position: absolute;
-  width: 200px;
-  height: 25px;
+  width: 218px;
+  height: 48px;
   bottom: 185px;
-  right: 10px;
+  right: 5px;
   color: #ce99ff;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 24px;
   padding: 10px;
   border: 2px solid #30f2c6;
   background-color: rgba(25, 25, 25, 0.5);
   border-radius: 5px;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .computer-display {
   position: absolute;
-  width: 200px;
+  width: 218px;
   height: 75px;
   bottom: 85px;
-  right: 10px;
+  right: 5px;
   color: white;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 48px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -194,18 +194,18 @@ body {
 
 .computer-output {
   position: absolute;
-  width: 200px;
+  width: 218px;
   height: 50px;
   bottom: 10px;
-  right: 10px;
-  color: #ce99ff;;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  right: 5px;
+  color: #ce99ff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 28px;
   padding: 10px;
   border: 2px solid #30f2c6;
   background-color: rgba(25, 25, 25, 0.5);
   border-radius: 5px;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
