@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  var num = Math.floor(Math.random() * 10) + 1 // Generate a random number between 1 and 10
-
   function checkGuess(guess, num) {
     var output
     if (isPlayerTurn) {
@@ -52,9 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var pDisplay = document.querySelector('.player-display') // Get player display element
+  var cDisplay = document.querySelector('.computer-display') // Get computer display element
   var numpadButtons = document.querySelectorAll('.numpad div')
 
-  async function playerTurn() {
+  function playerTurn() {
     return new Promise((resolve) => {
       function handleButtonClick() {
         if (isGameEnded) {
@@ -67,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       for (var i = 0; i < numpadButtons.length; i++) {
+        numpadButtons[i].removeEventListener('click', handleButtonClick)
         numpadButtons[i].addEventListener('click', handleButtonClick)
       }
     })
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var exception = 0
 
-  async function computerTurn(mi, ma, prevPlayerGuess) {
+  function computerTurn(mi, ma, prevPlayerGuess) {
     return new Promise((resolve) => {
       var computerGuess = 0
 
@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
         computerGuess = Math.floor((mi + ma) / 2)
       }
 
-      var cDisplay = document.querySelector('.computer-display') // Get computer display element
       cDisplay.textContent = computerGuess
       checkGuess(computerGuess, num)
       resolve(computerGuess)
@@ -115,6 +114,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return [mi, ma]
   }
 
+  var num = Math.floor(Math.random() * 10) + 1
+
   async function gameLogic() {
     var playerGuess = 0,
       computerGuess = 0,
@@ -134,8 +135,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (isGameOver(num, playerGuess, computerGuess) !== -1) {
       isGameEnded = true
+      showResultPrompt(isGameOver(num, playerGuess, computerGuess))
     }
   }
+
+  function showResultPrompt(result) {
+    var resultPrompt = document.querySelector('.result-prompt')
+    var resultMessage = document.getElementById('result-message')
+    var playAgainButton = document.getElementById('play-again-button')
+
+    if (result === 0) {
+      resultMessage.textContent = 'You Win!'
+      resultPrompt.classList.add('win')
+    } else {
+      resultMessage.textContent = 'You Lose!'
+      resultPrompt.classList.add('lose')
+    }
+
+    resultPrompt.style.display = 'block'
+
+    playAgainButton.addEventListener('click', function () {
+      location.reload() // Reload the page to start a new game
+    })
+  }
+
+  console.log(num)
 
   gameLogic()
 })

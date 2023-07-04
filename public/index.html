@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
   </head>
+
   <body>
     <div class="game-area">
       <h1 align="center">Guess the Mystery Number!</h1>
@@ -24,17 +25,22 @@
       </div>
 
       <div class="sparkle-container"></div>
-      
+
       <div class="player"></div>
       <div class="player-guess">Your Guess:</div>
       <div class="player-display"></div>
-      
+
       <div class="computer"></div>
       <div class="computer-guess">Computer Guess:</div>
       <div class="computer-display"></div>
 
       <div class="player-output">Result</div>
       <div class="computer-output">Result</div>
+    </div>
+
+    <div class="result-prompt">
+      <p id="result-message"></p>
+      <button id="play-again-button">Play Again</button>
     </div>
 
     <script src="MysteryNum.js"></script>
