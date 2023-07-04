@@ -6,8 +6,20 @@ MysteryNum is a number guessing game built using JavaScript and HTML/CSS. In thi
 
 To play the game, you need a web browser with JavaScript support. No additional dependencies or installations are required.
 
-- Clone the repository or download the source code.
-- Open the index.html file in your web browser.
+1. Clone the repository or download the source code.
+2. Open a terminal or command prompt and navigate to the project directory.
+3. Install the dependencies by running the following command:
+
+   ```bash
+   npm install
+   ```
+4. Start the server:
+
+    ```bash
+    npm run devstart
+    ```
+5. Open a web browser and visit `http://localhost:3000` to play the game.
+
 
 Alternatively, you can play the game online by visiting the [MysteryNum Game Website](https://sumitst05.github.io/MysteryNum/).
 
@@ -22,7 +34,6 @@ Alternatively, you can play the game online by visiting the [MysteryNum Game Web
 ## Features
 
 - Responsive UI: The game interface is designed to work well on both desktop and mobile devices (in desktop mode).
-- Sound effects: Enjoy sound effects that enhance the gaming experience.
 
 ## Contributing
 
