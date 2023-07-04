@@ -4,8 +4,9 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="src/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
+
   <body>
     <div class="game-area">
       <h1 align="center">Guess the Mystery Number!</h1>
@@ -37,6 +38,11 @@
       <div class="computer-output">Result</div>
     </div>
 
-    <script src="src/MysteryNum.js"></script>
+    <div class="result-prompt">
+      <p id="result-message"></p>
+      <button id="play-again-button">Play Again</button>
+    </div>
+
+    <script src="MysteryNum.js"></script>
   </body>
 </html>
