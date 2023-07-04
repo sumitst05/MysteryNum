@@ -16,7 +16,7 @@ body {
 }
 
 .game-area {
-  width: 700px;
+  width: 750px;
   height: 500px;
   background-image: radial-gradient(cyan, black);
   border: 2px solid rgb(139, 139, 255);
@@ -211,41 +211,52 @@ body {
 }
 
 .result-prompt {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0px;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   position: fixed;
-  top: 80%;
+  top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  background-color: #000000;
-  padding: 5px 20px;
-  border-radius: 10px;
+  background-color: rgba(43, 43, 43, 0.8);
+  padding: 5px 10px;
+  border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item{
+  display: grid;
+  gap: 12px;
+}
+
+.result-prompt.win {
+  color: #48e0a1;
+}
+
+.result-prompt.lose {
+  color: #ff4643;
+}
+
+#result-message{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #play-again-button {
   display: block;
-  margin-top: 20px;
   padding: 5px 20px;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   background-color: #007bff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 #play-again-button:hover {
-  background-color: #0056b3;
-}
-
-.result-prompt.win {
-  color: #44bba4;
-}
-
-.result-prompt.lose {
-  color: #e53935;
+  background-color: #007bff8e;
 }
