@@ -23,6 +23,22 @@ To play the game, you need a web browser with JavaScript support. No additional 
 
 Alternatively, you can play the game online by visiting the [MysteryNum Game Website](https://sumitst05.github.io/MysteryNum/).
 
+## File Structure
+
+The project has the following file structure:
+
+MysteryNum/ <br>
+├── public/ <br>
+│   ├── index.html <br>
+│   ├── MysteryNum.js <br>
+│   └── style.css <br>
+├── assets/ <br>
+│   ├── background.jpg <br>
+│   ├── computer.png <br>
+│   └── human.png <br>
+├── server.js <br>
+└── package.json
+
 ## How to Play
 
 - When you start the game, a secret number between a specified range will be generated.
