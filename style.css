@@ -9,7 +9,7 @@
   }
 
   body {
-    background-image: url('../assets/background.jpg');
+    background-image: url('assets/background.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -91,7 +91,7 @@
     height: 200px;
     bottom: 175px;
     left: 75px;
-    background-image: url('../assets/human.png');
+    background-image: url('assets/human.png');
     background-repeat: no-repeat;
   }
 
@@ -155,7 +155,7 @@
     height: 200px;
     bottom: 175px;
     right: -25px;
-    background-image: url('../assets/computer.png');
+    background-image: url('assets/computer.png');
     background-repeat: no-repeat;
   }
 
