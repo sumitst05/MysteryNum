@@ -27,17 +27,19 @@ Alternatively, you can play the game online by visiting the [MysteryNum Game Web
 
 The project has the following file structure:
 
-MysteryNum/ <br>
-├── public/ <br>
-│   ├── index.html <br>
-│   ├── MysteryNum.js <br>
-│   └── style.css <br>
-├── assets/ <br>
-│   ├── background.jpg <br>
-│   ├── computer.png <br>
-│   └── human.png <br>
-├── server.js <br>
+```
+/
+├── public/
+│   ├── index.html
+│   ├── MysteryNum.js
+│   └── style.css
+├── assets/
+│   ├── background.jpg
+│   ├── computer.png
+│   └── human.png
+├── server.js
 └── package.json
+```
 
 ## How to Play
 
