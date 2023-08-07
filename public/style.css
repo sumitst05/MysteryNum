@@ -266,23 +266,23 @@ body {
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 20px;
-    height: 35px;
+    height: 25px;
   }
   .numpad div {
     width: 42px;
     height: 42px;
-    margin: 5px;
+    margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .player {
     left: 0%;
-    bottom: 40%;
+    bottom: 25%;
   }
   .computer {
     left: 73%;
-    bottom: 40%;
+    bottom: 25%;
   }
   .player-guess,
   .computer-guess {
