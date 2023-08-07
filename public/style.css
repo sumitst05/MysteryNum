@@ -1,10 +1,10 @@
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3vw;
   display: flex;
   justify-content: center;
   color: #d7ff82;
   height: 50px;
+  font-size: 36px;
 }
 
 body {
@@ -263,51 +263,52 @@ body {
   background-color: #007bff8e;
 }
 
-@media screen and (max-width: 720px) {
-  .player-guess {
-    width: 20%;
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+    height: 35px;
   }
-  .player-display {
-    width: 20%;
+  .numpad div {
+    width: 42px;
+    height: 42px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .player-output {
-    width: 20%;
+  .player {
+    left: 0%;
+    bottom: 40%;
   }
-
+  .computer {
+    left: 73%;
+    bottom: 40%;
+  }
+  .player-guess,
   .computer-guess {
-    width: 20%;
+    width: 32%;
+    bottom: 32%;
+    height: 10%;
+    text-align: center;
   }
+  .player-display,
   .computer-display {
-    width: 20%;
+    width: 32%;
+    height: 10%;
+    bottom: 17%;
+    text-align: center;
   }
+  .player-output,
   .computer-output {
-    width: 20%;
+    width: 32%;
+    height: 10%;
+    bottom: 2%;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 460px) and (max-width: 720px) {
-  h1 {
-    font-size: 6vw;
-    height: 50px;
-  }
-  .player {
-    left: 3%;
-  }
-  .computer {
-    left: 78%;
-  }
-  .player-output {
-    font-size: 22px;
-    text-align: center;
-  }
-  .computer-output {
-    font-size: 22px;
-    text-align: center;
-  }
-  .player-guess {
-    text-align: center;
-  }
-  .computer-guess {
-    text-align: center;
-  }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1024px) {
 }
