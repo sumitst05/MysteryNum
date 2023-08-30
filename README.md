@@ -1,10 +1,14 @@
-# MysteryNum Game
+# ✨ MysteryNum ✨
 
-MysteryNum is a number guessing game built using JavaScript and HTML/CSS. In this game, the player has to guess a randomly generated secret number. The objective is to find the correct number before the computer finds it. The guesses made by the computer are not random but sound and smart. 
+MysteryNum is a number guessing game built using vanilla JavaScript, HTML and CSS. 
+- Guess the randomly generated secret number.
+- The objective is to find the correct number before the computer finds it.
+
+The guesses made by the computer are `not random` but sound and smart. 
 
 ## Getting Started
 
-To play the game, you need a web browser with JavaScript support. No additional dependencies or installations are required.
+To play the game, you need a web browser with JavaScript support.
 
 1. Clone the repository or download the source code.
 2. Open a terminal or command prompt and navigate to the project directory.
@@ -13,11 +17,13 @@ To play the game, you need a web browser with JavaScript support. No additional 
    ```bash
    npm install
    ```
+   
 4. Start the server:
 
     ```bash
     npm run devstart
     ```
+    
 5. Open a web browser and visit `http://localhost:3000` to play the game.
 
 
@@ -51,7 +57,7 @@ The project has the following file structure:
 
 ## Features
 
-- Responsive UI: The game interface is designed to work well on both desktop and mobile devices (in desktop mode).
+- Responsive UI: The game interface is designed to work well on both desktop and mobile devices.
 
 ## Contributing
 
