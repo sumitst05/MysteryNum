@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       for (var i = 0; i < numpadButtons.length; i++) {
-        numpadButtons[i].removeEventListener('click', handleButtonClick)
         numpadButtons[i].addEventListener('click', handleButtonClick)
       }
     })
@@ -158,8 +157,5 @@ document.addEventListener('DOMContentLoaded', function () {
       location.reload() // Reload the page to start a new game
     })
   }
-
-  console.log(num)
-
   gameLogic()
 })
