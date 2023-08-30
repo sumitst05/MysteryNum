@@ -307,8 +307,16 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  .player {
+    left: 8%;
+    bottom: 25%;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 474px) {
+  .player {
+    left: 2%;
+    bottom: 25%;
+  }
 }
