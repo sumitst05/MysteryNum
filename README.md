@@ -6,7 +6,7 @@ MysteryNum is a number guessing game built using vanilla JavaScript, HTML and CS
 
 The guesses made by the computer are `not random` but sound and smart. 
 
-## Getting Started
+## 🚀 Getting Started
 
 To play the game, you need a web browser with JavaScript support.
 
@@ -26,10 +26,9 @@ To play the game, you need a web browser with JavaScript support.
     
 5. Open a web browser and visit `http://localhost:3000` to play the game.
 
-
 Alternatively, you can play the game online by visiting the [MysteryNum Game Website](https://sumitst05.github.io/MysteryNum/).
 
-## File Structure
+## 🗂️ File Structure
 
 The project has the following file structure:
 
@@ -47,7 +46,7 @@ The project has the following file structure:
 └── package.json
 ```
 
-## How to Play
+## 🎮 How to Play
 
 - When you start the game, a secret number between a specified range will be generated.
 - Enter your guess in the input field provided and click the "Guess" button.
@@ -55,15 +54,15 @@ The project has the following file structure:
 - Keep guessing until you find the correct number or run out of attempts.
 - The game will end and display the result (win or lose) along with the secret number.
 
-## Features
+## ⚙️ Features
 
 - Responsive UI: The game interface is designed to work well on both desktop and mobile devices.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions to the MysteryNum game are welcome. If you find any bugs, have suggestions, or want to add new features, please open an issue or submit a pull request on the GitHub repository.
 
-## License
+## 📘 License
 
 This project is licensed under the GNU General Public License. See the [LICENSE](LICENSE) file for more details.
 
